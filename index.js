@@ -33,7 +33,7 @@ $(function () {
                 case 3:
                     $active.css({top:-backH,left:0})
             }
-            $active.top().animate({left:0,top:0},'fast')
+            $active.stop().animate({top:0,left:0},'fast')
         });
         $li.mouseleave(function(e){
             e=e||window.event;
@@ -41,16 +41,16 @@ $(function () {
             var y = $(this).outerHeight() / 2 - (e.clientY - $(this).offset().top);
            switch(res){
                case 0:
-                   $active.animate({top:0,left:backW},'fast');
+                   $active.stop().animate({top:0,left:backW},'fast');
                    break;
                case 1:
-                   $active.animate({top:-backH,left:0},'fast');
+                   $active.stop().animate({top:-backH,left:0},'fast');
                    break;
                case 2:
-                   $active.animate({top:0,left:-backW},'fast');
+                   $active.stop().animate({top:0,left:-backW},'fast');
                    break;
                case 3:
-                   $active.animate({top:backH,left:0},'fast')
+                   $active.stop().animate({top:backH,left:0},'fast')
            }
 
 
