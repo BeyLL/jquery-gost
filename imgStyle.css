@@ -9,13 +9,14 @@ ul li {
     margin:200px auto 0;
     display:flex;
     justify-content: center;
-  /*  overflow: hidden;*/
+    overflow: hidden;
 }
 li{
     position:relative;
     margin:0 20px;
     width:200px;
     height:200px;
+    overflow:hidden;
 }
 img{
     width:100%;
@@ -23,8 +24,8 @@ img{
 }
 .active{
     position:absolute;
-    top:200px;
-    left:0;
+    /*top:200px;*/
+    /*left:0;*/
     width:200px;
     height:200px;
 }
